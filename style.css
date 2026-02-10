@@ -159,4 +159,115 @@ input, textarea {
 
 .submit-btn:hover {
     background-color: #34495e;
+
+}
+/* Footer Basic Styling */
+.site-footer {
+  background-color: #26272b; /* Dark Grey Background */
+  padding: 45px 0 20px;
+  font-family: Arial, sans-serif;
+  color: #737373; /* Light text color */
+  line-height: 24px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap; /* Mobile ke liye zaroori hai */
+  justify-content: space-between;
+}
+
+/* Columns Styling */
+.footer-col {
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+.footer-col h4 {
+  color: #fff; /* Heading White Color */
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+  font-weight: 600;
+  position: relative;
+}
+
+/* Heading ke neeche underline effect */
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63; /* Pink Highlight Color */
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+/* Links Styling */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect on Links */
+.footer-col ul li a:hover {
+  color: #fff;
+  padding-left: 8px; /* Thoda right shift hoga */
+}
+
+/* Social Links Styling */
+.social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px; /* Icon size */
+  transition: all 0.5s ease;
+}
+
+.social-links a:hover {
+  color: #24262b;
+  background-color: #fff;
+}
+
+/* Copyright Section */
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin-top: 20px;
+}
+
+/* Mobile Responsiveness (Screen choti hone par) */
+@media (max-width: 767px) {
+  .footer-col {
+    width: 100%; /* Full width le lega */
+    margin-bottom: 30px;
+  }
 }
